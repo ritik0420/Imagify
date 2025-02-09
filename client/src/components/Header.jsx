@@ -18,7 +18,6 @@ const Header = () => {
             setShowLogin(true)
         }
     }
-
     return (
         <motion.div className='flex flex-col justify-center items-center text-center my-20'
             initial={{ opacity: 0.2, y: 100 }}
@@ -47,7 +46,7 @@ const Header = () => {
                 transition={{ delay: 0.4, duration: 0.8 }}
             > Unleash your creative potential with our text to image generator. Transform text into stunning images in seconds, perfect for social media, branding, and more.</motion.p>
             <motion.button onClick={onClickHandler}
-                className='sm:text-lg text-white bg-black w-auto mt-8 px-12 py-2.5 flex items-center gap-2 rounded-full'
+                className='sm:text-lg text-white bg-black w-auto mt-8 px-12 py-2.5 flex items-center gap-2 rounded-full cursor-pointer'
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0 }}
